@@ -44,6 +44,10 @@ They can be called for each created object:
     >>> m0.func(args)
 
 - step resolution:
-  - __setRes(res)__ : set step resolution to *res* (int). Resolution must be supported by the hardware device (see Pololu docs). 
-  - __getRes()__ :
+  - __setRes__(*res*) : set step resolution to *res* (int). Resolution must be supported by the hardware device (see Pololu docs). Changing step resolution does not change motor speed. 
+  - __getRes__() : return resolution (1=full step, 2=1/2 step, ...)
+- speed:
+  - __setSpeed__(*speed*) : set speed to *speed* in step_unit/s
+  - __getSpeed__() : return current speed in step_units/s
+-  
 
