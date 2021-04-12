@@ -16,7 +16,7 @@ Two motors can be driven simultaneoulsy.
 
 Copy pwmStepper.py in the RASP2 filesystem, then:
 
-code
+Python code
 >>> from pwmStepper import pwmStep
 >>> m0 = pwmStep(0)      # instantiate motor 0 with default config
 >>> m1 = pwmStep(1)      # instantiate motor 1 with default config
