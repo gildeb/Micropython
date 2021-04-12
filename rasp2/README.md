@@ -10,5 +10,5 @@ Two motors can be driven simultaneoulsy.
 
 # The wiring
 
-![Tested on](https://raw.githubusercontent.com/gildeb/micropython/test/rasp2/F04E02.png)
+![Tested on](https://raw.githubusercontent.com/gildeb/micropython/master/rasp2/F04E02.png)
 
