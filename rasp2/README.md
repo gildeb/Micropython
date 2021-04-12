@@ -55,5 +55,7 @@ They can be called for each created object:
 - steps
   - __doSteps__(*nsteps*) : move *abs(nsteps)* (int) forward if *nsteps>0*, backward otherwise
 - position
-  - __getPosition__() :
+  - __resetPosition__() : set current position to zero (in step_unit)
+  - __getPosition__() : return motor position in step_unit since last position reset
+ 
 
