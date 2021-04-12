@@ -10,5 +10,5 @@ Two motors can be driven simultaneoulsy.
 
 # The wiring
 
-![wiring](Photo1.jpg)
+![wiring](Pico_layout_simple.PNG)
 
