@@ -66,3 +66,5 @@ They can be called for each driver instantiation:
 - __PWM_PULSE_WIDTH__ : step pwm pulse width in 0.1 microsecond unit. Default is 30 -> pulse width = 3 microseconds
 
 
+# Implementation
+
