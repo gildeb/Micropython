@@ -9,3 +9,10 @@ __gras gras__/normal
 2. 2
 
 3. trois
+
+voici un script Python
+
+def test():
+   print("ceci est un test")
+   
+   
