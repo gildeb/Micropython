@@ -70,9 +70,15 @@ They can be called for each driver instantiation:
 
 ## pwm state machine
 
-To achieve an acurate step pulse timing, a PIO state machine is used (one for each motor). The state machine frequency is set to 20MHz (corresponding to 1 instruction/100ns). The y register keep the pulse width value. The pwm period is stored in isr register and loaded in x register at the begining of each period, unless a new value can be pulled from the input FIFO. Afterward, x is decremented until it first reaches y, which triggers the step pin, then 0, which reset the step pin and start a new cycle.
+To achieve an acurate step pulse timing, a PIO state machine is used (one for each motor). The state machine frequency is set to 20MHz (corresponding to 1 instruction/100ns). The y scratch register keep the pulse width value. The pwm period is stored in isr register and loaded in x scratch register at the begining of each period, unless a new value can be pulled from the input FIFO. Afterward, x is decremented until it first reaches y, which triggers the step pin, then 0, which reset the step pin and start a new cycle.
 
 ## counter state machine
+
+The second state machine is used as a step downcounter. x scratch register is loaded with the target *nsteps* number and is decremented each step. The synchronisation of the two state machine is achieved by an irq. When x reaches 0, the counter state machine triggers the __stepsEnd__() irq handler function and waits for another *nsteps* value in its input FIFO. The pwm state machine by irq.
+
+Therefore, feeding the pwm FIFO during the run will instantaneously change the step period (motor speed) without modifying the total number of steps to run.
+
+## position tracking
 
 
 
