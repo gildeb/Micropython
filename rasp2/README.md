@@ -12,3 +12,5 @@ Two motors can be driven simultaneoulsy.
 
 ![wiring](wiring.png)
 
+# The driver
+
