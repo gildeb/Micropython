@@ -10,7 +10,7 @@ Two motors can be driven simultaneoulsy.
 
 # The wiring
 
-![wiring](https://raw.githubusercontent.com/gildeb/Micropython/master/rasp2/Photo1.jpg)
+![wiring](Photo1.jpg)
 
 Tested on **ESP-WROVER-KIT v3**
 ![Tested on](https://raw.githubusercontent.com/loboris/MicroPython_ESP32_psRAM_LoBo/master/Documents/ESP-WROVER-KIT_v3_small.jpg)
