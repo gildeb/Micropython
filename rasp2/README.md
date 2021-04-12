@@ -68,3 +68,11 @@ They can be called for each driver instantiation:
 
 # Implementation
 
+## pwm state machine
+
+To achieve an acurate step pulse timing, a PIO state machine is used (one for each motor). The state machine frequency is set to 20MHz (corresponding to 1 instruction/100ns). The y register keep the pulse width value. The pwm period is stored in isr register and loaded in x register at the begining of each period, unless a new value can be pulled from the input FIFO. Afterward, x is decremented until it first reaches y, which triggers the step pin, then 0, which reset the step pin and start a new cycle.
+
+## counter state machine
+
+
+
