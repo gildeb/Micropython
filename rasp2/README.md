@@ -43,3 +43,7 @@ They can be called for each created object:
 
     >>> m0.func(args)
 
+- step resolution:
+  -- __setRes(res)__ : set step resolution to *res* (int). Resolution must be supported by the hardware device (see Pololu docs). 
+  -- __getRes()__ :
+
