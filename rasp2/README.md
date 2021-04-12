@@ -11,5 +11,5 @@ Two motors can be driven simultaneoulsy.
 # The wiring
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gildeb/micropython/master/Pyboard V1.0 (Lite) Layout.jpg" alt="wiring"/>
+  <img src="https://github.com.com/gildeb/micropython/master/Pyboard V1.0 (Lite) Layout.jpg" alt="wiring"/>
 </p>
