@@ -10,9 +10,25 @@ __gras gras__/normal
 
 3. trois
 
-voici un script Python
 
-def test():
-   print("ceci est un test")
-   
-   
+####Ecrire du code
+
+#####Un code entier
+
+Voici un code en C :
+
+    int main()
+    {
+        printf("Hello world!\n");
+        return 0;
+    }
+    
+Il vous suffit d'écrire votre phrase de présentation comme n'importe quelle phrase et d'écrire votre code à la ligne.
+    
+`Voici un code en C :`
+
+    int main()
+    {
+        printf("Hello world!\n");
+        return 0;
+    }
