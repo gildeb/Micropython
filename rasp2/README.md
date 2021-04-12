@@ -18,7 +18,6 @@ __gras gras__/normal
 Voici un code en Python :
 
     def test(args)
-    
         print(*args\n")
         return
     
