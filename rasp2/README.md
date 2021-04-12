@@ -4,8 +4,8 @@
 
 __gras gras__/normal
 
-* un
+1* un
 
-* 2
+2* 2
 
-* trois
+3* trois
