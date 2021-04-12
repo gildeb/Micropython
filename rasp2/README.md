@@ -15,7 +15,7 @@ __gras gras__/normal
 
 #####Un code entier
 
-Voici un code en Python :
+Voici un code:
 
     def test(args)
         print(*args\n")
