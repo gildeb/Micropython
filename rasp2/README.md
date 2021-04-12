@@ -30,10 +30,16 @@ They must be set at object creation time:
 
 with *param* being:
 
-- __dev__ (string) : the hardware motor driver. At present, only two devices implemented: 'DRV8834' and 'MPU6500'. Default is 'DRV8834'.
-- __step_size__ (float) : the stepper full step size, in user units (eg 1.8 for a Nema 200 steps/rotation)
-- __step_unit__ (string) : the step unit (eg 'deg', 'mm')
-- __stepRes__ (int) : initial step resolution (1=full step, 2=half step, 4=quarter step, ...). Default is 1.
+- __dev__ (string) : the hardware motor driver. At present, only two devices are implemented: 'DRV8834' and 'MPU6500'. Default is 'DRV8834'.
+- __step_size__ (float) : the stepper full step size, in user units (eg 1.8 for a Nema with 200 steps/rotation)
+- __step_unit__ (string) : the step unit (eg 'deg', 'mm', ...)
+- __stepRes__ (int) : initial step resolution (1=full step, 2=1/2 step, 4=1/4 step, ...). Default is 1.
 - __max_speed__ (float) : the maximum rotation speed, in steep_unit/s
 - __min_speed__ (float) : the minimum rotation speed, in steep_unit/s
+
+## Driver functions
+
+They can be called for each created object:
+
+    >>> m0.func(args)
 
