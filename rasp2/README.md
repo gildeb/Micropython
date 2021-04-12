@@ -80,5 +80,7 @@ Therefore, feeding the pwm FIFO during the run will instantaneously change the s
 
 ## position tracking
 
+To determine position, the driver keep track of the total number of steps in each direction for each step resolution. The information is stored in the __resCountList__ (python dictionnary) attribute. 
 
+As the dictionnary is updated after each run (__doSteps__), you should not change step resolution while the motor is running.
 
