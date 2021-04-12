@@ -49,5 +49,11 @@ They can be called for each created object:
 - speed:
   - __setSpeed__(*speed*) : set speed to *speed* in step_unit/s
   - __getSpeed__() : return current speed in step_units/s
--  
+-  direction
+  - __setDir__(*dir*) : set direction to forward if *dir*=1 (int), backward otherwise
+  - __getDir__() : return current direction: 1=forward, -1=backward
+- steps
+  - __doSteps__(*nsteps*) : move *abs(nsteps)* (int) forward if *nsteps>0*, backward otherwise
+- position
+  - _getPosition_() :
 
