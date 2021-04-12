@@ -15,13 +15,12 @@ __gras gras__/normal
 
 #####Un code entier
 
-Voici un code en C :
+Voici un code en Python :
 
-    int main()
-    {
-        printf("Hello world!\n");
-        return 0;
-    }
+    def test(args)
+    
+        print(*args\n")
+        return
     
 Il vous suffit d'écrire votre phrase de présentation comme n'importe quelle phrase et d'écrire votre code à la ligne.
     
