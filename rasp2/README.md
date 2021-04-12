@@ -39,7 +39,7 @@ with *param* being:
 
 ## Driver functions
 
-They can be called for each created object:
+They can be called for each driver instantiation:
 
     >>> m0.func(args)
 
@@ -54,6 +54,7 @@ They can be called for each created object:
   - __getDir__() : return current direction: 1=forward, -1=backward
 - steps
   - __doSteps__(*nsteps*) : move *abs(nsteps)* (int) forward if *nsteps>0*, backward otherwise
+  - __stop__() : stop the motor (abort current run)
 - position
   - __resetPosition__() : set current position to zero (in step_unit)
   - __getPosition__() : return motor position in step_unit since last position reset
