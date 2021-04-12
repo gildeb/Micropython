@@ -10,5 +10,5 @@ Two motors can be driven simultaneoulsy.
 
 # The wiring
 
-![Tested on](https://raw.githubusercontent.com/micropython/master/)
-</p>
+![Tested on](https://raw.githubusercontent.com/micropython/master/Pyboard V1.0 (Lite) Layout.jpg)
+
