@@ -1,32 +1,13 @@
-# Titre *niveau 1*
+# Introduction
 
-## titre niveau 2
+pwmStepper implements a bipolar stepper motor driver for the Raspberry Pi Pico. The board must be connected to a hardware driver which can be either DRV8834 or MPU6500 from Pololu.
 
-__gras gras__/normal
+The driver takes benefit of the PIO feature to generate a pwm with acurate period to drive the step pin. The pulse width is set to 3 microsecond.
 
-1. un
+The step resolution and motor speed can be set and changed 'on the flight'.
 
-2. 2
+Two motors can be driven simultaneoulsy.
 
-3. trois
+# The wiring
 
 
-####Ecrire du code
-
-#####Un code entier
-
-Voici un code:
-
-    def test(args)
-        print(*args\n")
-        return
-    
-Il vous suffit d'écrire votre phrase de présentation comme n'importe quelle phrase et d'écrire votre code à la ligne.
-    
-`Voici un code en C :`
-
-    int main()
-    {
-        printf("Hello world!\n");
-        return 0;
-    }
