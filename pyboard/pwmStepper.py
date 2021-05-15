@@ -1,11 +1,9 @@
-import math
 import os
 import micropython
 from machine import mem32
 from pyb import Pin, Timer, freq, micros, elapsed_micros
-from stm import TIM1, TIM2, TIM3, TIM4, TIM5, TIM8, TIM9, TIM12, \
-                TIM_ARR, TIM_CR2, TIM_SMCR, TIM_CNT, TIM_PSC, \
-                TIM_CCR1, TIM_CCR2
+from stm import TIM1, TIM2, TIM3, TIM4, TIM5, TIM8, \
+                TIM_ARR, TIM_CR2, TIM_SMCR, TIM_CNT, TIM_PSC
 #
 micropython.alloc_emergency_exception_buf(300) # for debugging
 #
@@ -16,8 +14,8 @@ dir_pins         = ['X1', 'Y1', 'X9']
 step_pins        = ['X2', 'Y2', 'X10']
 enable_pins      = ['X3', 'Y3', 'X11']
 #
-if 'PYBv1.1' not in os.uname()[4]:
-    print('Warning:  This is not a pyboard V1.1')
+if 'PYBv1.1' not in os.uname()[4] and 'PYBv1.0' not in os.uname()[4]:
+    print('Warning:  This is not a pyboard V1.0 or V1.1')
 
 pulse_timer      = [2, 8, 4]
 pwm_channels     = [2, 2, 2]
@@ -44,8 +42,8 @@ print('      period:', period, '   prescalers:', prescaler[0],
 
 class pwmStep():
 
-    def __init__(self, id=0, step_res=1, step_size=0.147, step_unit='mm',
-                 max_speed=147, min_speed=0):
+    def __init__(self, id=0, step_res=1, step_size=1.8, step_unit='deg',
+                 max_speed=1800, min_speed=0):
         #
         if id not in (0,1,2):
             print('pwmStep.__init__ - Error : id ', id,
