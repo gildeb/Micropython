@@ -1,10 +1,15 @@
 # Introduction
 
 pwmStepper is a micropython stepper motor driver for the Pyboard V1.0 and V1.1. 
+
 It drives bipolar stepper motors throught hardware drivers like A4988, DRV8825, ...
+
 A pwm signal with 5us length and adjustable period is generated for the step pin. 
+
 Up to three motors can run simultaneoulsy and independantly.
+
 A step counter keeps track of the motor position automatically.
+
 Each motor speed can be changed "in the fly".
 
 # The wiring
