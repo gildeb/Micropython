@@ -28,7 +28,7 @@ Copy pwmStepper.py in the Pyboard filesystem, then:
     >>> m1.set_speed(-m1.speed) # change direction (warning: speed attribute is always >0)
     >>> m1.do_steps(50)         # move motor 1 50 steps backward
 
-Warning:  *do_steps*  function enables the hardware driver (enable pin set to 0) and it stays enabled when the motor stops (in order to lock position). The driver must be disabled to stop current flowing in the coils.
+Warning:  *do_steps*  function enables the hardware driver (enable pin set to 0) and it stays enabled when the motor stops (in order to lock position). The driver must be disabled to stop current flowing through the coils.
 
 ## Configuration parameters
 
