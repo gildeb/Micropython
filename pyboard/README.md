@@ -6,9 +6,10 @@ It drives bipolar stepper motors throught hardware drivers like A4988, DRV8825, 
 
 A pwm signal with 5us length and adjustable period is generated for the step pin. 
 
-Up to three motors can run simultaneoulsy and independantly.
 
 A step counter keeps track of the motor position automatically.
+
+Up to three motors can run simultaneoulsy and independantly.
 
 Each motor speed can be changed "on the fly".
 
