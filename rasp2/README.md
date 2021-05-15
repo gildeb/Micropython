@@ -61,7 +61,7 @@ They can be called for each driver instantiation:
  
 ## Driver constants
 
-- __STEP_MAX_TIMESTEP_MAX_TIME__ : maximum step duration in microseconds. Default is 0xffffffff
+- __STEP_MAX_TIME__ : maximum step duration in microseconds. Default is 0xffffffff
 - __STEP_MAX_NB__ : maximum number of steps per run (__doSteps__). Default is 0xffffffff
 - __PWM_PULSE_WIDTH__ : step pwm pulse width in 0.1 microsecond unit. Default is 30 -> pulse width = 3 microseconds
 
