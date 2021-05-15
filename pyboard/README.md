@@ -10,7 +10,7 @@ Up to three motors can run simultaneoulsy and independantly.
 
 A step counter keeps track of the motor position automatically.
 
-Each motor speed can be changed "in the fly".
+Each motor speed can be changed "on the fly".
 
 # The wiring
 
