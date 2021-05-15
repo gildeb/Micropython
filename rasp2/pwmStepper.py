@@ -243,9 +243,3 @@ class pwmStep():
 
     def getSpeed(self):
         return self.speed*self.dir
-
-
-
-
-
-
