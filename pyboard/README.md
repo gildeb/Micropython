@@ -23,9 +23,9 @@ Copy pwmStepper.py in the Pyboard filesystem, then:
     >>> from pwmStepper import *
     >>> m0 = pwmStep(0)         # instantiate motor 0 with default config
     >>> m1 = pwmStep(1)         # instantiate motor 1 with default config
-    >>> m0.doSteps(50)          # move motor 0 50 steps forward
+    >>> m0.do_steps(50)          # move motor 0 50 steps forward
     >>> m1.set_speed(-m1.speed) # change direction (warning: speed attribute is always >0)
-    >>> m1.doSteps(50)         # move motor 1 50 steps backward
+    >>> m1.do_steps(50)         # move motor 1 50 steps backward
 
 ## Configuration parameters
 
