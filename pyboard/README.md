@@ -24,8 +24,8 @@ Copy pwmStepper.py in the Pyboard filesystem, then:
     >>> m0 = pwmStep(0)         # instantiate motor 0 with default config
     >>> m1 = pwmStep(1)         # instantiate motor 1 with default config
     >>> m0.doSteps(50)          # move motor 0 50 steps forward
-    >>> m1.set_speed(-m1.speed) # 
-    >>> m1.doSteps(-50)         # move motor 1 50 steps backward
+    >>> m1.set_speed(-m1.speed) # change direction (warning: speed attribute is always >0)
+    >>> m1.doSteps(50)         # move motor 1 50 steps backward
 
 ## Configuration parameters
 
@@ -35,7 +35,7 @@ They must be set at object creation time:
 
 with *param* being:
 
-- id (integer) : driver id (see wiring)
+- id (integer) : driver id (see wiring), 0, 1 or 2
 - step_size (float) : the stepper full step size, in user units (eg 1.8 for a Nema with 200 steps/rotation)
 - step_unit (string) : the step unit (eg 'deg', 'mm', ...)
 - step_res (int) : hardware step resolution (1=full step, 2=1/2 step, 4=1/4 step, ...). Default is 1.
