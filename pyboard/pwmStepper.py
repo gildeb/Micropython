@@ -8,7 +8,7 @@ from stm import TIM1, TIM2, TIM3, TIM4, TIM5, TIM8, \
 micropython.alloc_emergency_exception_buf(300) # for debugging
 #
 STEP_MAX_TIME = 0xffff    # max value of ARR for pulse timers
-PULSE_WIDTH   = 5         # pwm pulse width in us
+PULSE_WIDTH   = 5         #  pwm pulse width in us
 #
 dir_pins         = ['X1', 'Y1', 'X9']
 step_pins        = ['X2', 'Y2', 'X10']
@@ -231,11 +231,3 @@ class pwmStep():
     def get_speed(self):
         ''' return current signed speed in step_unit/s '''
         return self.speed*self.dir
-
-
-
-
-
-
-
-
