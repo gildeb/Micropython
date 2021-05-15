@@ -21,10 +21,11 @@ Each motor speed can be changed "in the fly".
 Copy pwmStepper.py in the Pyboard filesystem, then:
 
     >>> from pwmStepper import *
-    >>> m0 = pwmStep(0)      # instantiate motor 0 with default config
-    >>> m1 = pwmStep(1)      # instantiate motor 1 with default config
-    >>> m1 = pwmStep(2)      # move motor 0 100 steps forward
-    >>> m2.doSteps(-50)      # move motor 1 50 steps backward
+    >>> m0 = pwmStep(0)         # instantiate motor 0 with default config
+    >>> m1 = pwmStep(1)         # instantiate motor 1 with default config
+    >>> m0.doSteps(50)          # move motor 0 50 steps forward
+    >>> m1.set_speed(-m1.speed) # 
+    >>> m1.doSteps(-50)         # move motor 1 50 steps backward
 
 ## Configuration parameters
 
@@ -38,8 +39,8 @@ with *param* being:
 - step_size (float) : the stepper full step size, in user units (eg 1.8 for a Nema with 200 steps/rotation)
 - step_unit (string) : the step unit (eg 'deg', 'mm', ...)
 - step_res (int) : hardware step resolution (1=full step, 2=1/2 step, 4=1/4 step, ...). Default is 1.
-- max_speed (float) : the maximum rotation speed, in steep_unit/s
-- min_speed (float) : the minimum rotation speed, in steep_unit/s
+- max_speed (float) : the maximum rotation speed, in step_unit/s
+- min_speed (float) : the minimum rotation speed, in step_unit/s
 
 ## Driver functions
 
@@ -58,7 +59,7 @@ They can be called for each driver instantiation:
   - stop() : stop the motor (abort run)
 - position
   - reset_position() : set current position to zero (in step_unit)
-  - getPosition() : return motor position in step_unit
+  - get_position() : return motor position in step_unit
  
 
 ## how does it works
