@@ -27,6 +27,8 @@ Copy pwmStepper.py in the Pyboard filesystem, then:
     >>> m1.set_speed(-m1.speed) # change direction (warning: speed attribute is always >0)
     >>> m1.do_steps(50)         # move motor 1 50 steps backward
 
+Warning: do_steps function enables the hardware driver (enable pin set to 0) and it stays enabled when the motor stops (in order to lock position). The driver must be disabled to stop current flowing in the coils.
+
 ## Configuration parameters
 
 They must be set at object creation time:
@@ -63,3 +65,7 @@ They can be called for each driver instantiation:
  
 
 ## how does it works
+
+Each driver instantiation uses two timers:
+- a pulse timer to generate the pwm step signal. Its prescaler is set so that the period resolution is 1us. Therefore, the pulse timer period is the step duration in us. The pulse width is 5us which is large enough for the hardware driver. The pulse timer is master timer. 
+- a count timer to count steps. It is configured as a slave timer with a clock triggered by the pulse timer. The count timer callback function is used to stop the pulse timer when the desired step number is reached.
