@@ -65,7 +65,7 @@ They can be called for each driver instantiation:
   - get_position() : return motor position in step_unit
  
 
-## how does it works
+## how it works
 
 Each driver instantiation uses two timers:
 - a pulse timer to generate the pwm step signal. Its prescaler is set so that the period resolution is 1us. Therefore, the pulse timer period is the step duration in us. The pulse width is 5us which is large enough for the hardware driver. The pulse timer is master timer. 
