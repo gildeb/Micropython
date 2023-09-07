@@ -7,4 +7,5 @@ Les données sont fournies par l'imu MPU6050 piloté par un ESP01 sous micropyth
 par une batterie Li-ion (type bouton).
 
 > MPU6050dmp20.py : transcrytpion sous micropython du driver Arduino de Jeff Rowberg. Le module est trop lourd pour être chargé en RAM et doit être integré au firmware.
+> 
 > firmware-combined.bin : firmware micropython pour l'ESP01 contenant, entre autres, le module MPU6050dmp20
