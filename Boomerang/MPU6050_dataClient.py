@@ -100,7 +100,7 @@ def recvData():
         except KeyboardInterrupt:
             break
 
-os.chdir('/Users/Gilles/Dropbox/Informatique/MicroPython/ESP01/MPU6050')
+# os.chdir('MyDir')
 cmdList = {'1':dataFileList, '2':deleteDataFile, '3':recordData,  '4':recvData,  '5':stop}
 host, port = '192.168.4.1', 18000
 
