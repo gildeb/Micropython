@@ -11,6 +11,6 @@ Le driver du MPU6050 (module MPU6050dmp20) utilise le DMP (Digital Motion Proces
 L'envoi des commandes à l'ESP01 (démarrage acquisition, récupération/suppression de fichiers) se fait en WiFi 
 (ESP01 en mode Access Point) par socket IP.
 
-> __MPU6050dmp20.py__ : transcription sous micropython du driver Arduino de Jeff Rowberg. Le module est trop lourd pour être chargé en RAM et doit être integré au firmware.
+> __MPU6050_dataServer.py__ : à lancer au boot de l'ESP01
 > 
-> __firmware-combined.bin__ : firmware micropython pour l'ESP01/ESP8266 contenant, entre autres, le module MPU6050dmp20
+> __MPU6050_dataClient.py__ : script d'envoi des commandes
