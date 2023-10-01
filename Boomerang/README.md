@@ -14,3 +14,6 @@ L'envoi des commandes à l'ESP01 (démarrage acquisition, récupération/suppres
 > __MPU6050_dataServer.py__ : à lancer au boot de l'ESP01
 > 
 > __MPU6050_dataClient.py__ : script d'envoi des commandes depuis un PC
+
+
+![wiring](Boomerang_1.png)
