@@ -15,7 +15,9 @@ Each motor speed can be changed "on the fly".
 
 # The wiring
 
-![wiring](./images/wiring.png)
+<p align="center">
+    <img src="./images/wiring.png" width="500">
+<p/>
 
 # The driver
 
