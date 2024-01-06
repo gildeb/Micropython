@@ -10,7 +10,9 @@ Two motors can be driven simultaneoulsy.
 
 # The wiring
 
-![wiring](./images/wiring.png)
+<p align="center">
+    <img src="./images/wiring.png" width=600">
+<p/>
 
 # The driver
 
